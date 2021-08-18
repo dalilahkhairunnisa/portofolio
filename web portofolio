@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<!-- awesome -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CC3C3;
+  z-index: 1;
+}
+nav ul{
+  position: relative;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+nav p{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  margin-left: 40px;
+  color: white;
+  word-spacing: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+nav .nama {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: x-large;
+} 
+.about{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFF0F3;;
+}
+
+.background {
+  background-image: url('bg.png');
+  background-size: 280px;
+  z-index: 1;
+  width: 350px;
+  top: 100px;
+  left: 240px;
+  position:absolute;
+  background-repeat: no-repeat;
+  padding: 500px;
+  margin: 50px;
+}
+.im{
+  position:absolute;
+  margin-top: 0;
+  padding: 50px;
+  left: 550px;
+  font-family: 'Dancing Script', cursive;
+  font-size: xx-large;
+  letter-spacing: 0.15em;
+}
+.front{
+  position:absolute;
+  margin-top: 150px;
+  padding: 110px;
+  left: 485px;
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.60em;
+}
+.btn-see{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 595px;
+  top: 330px;
+  background-color: #4CC3C3;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
+}
+.abt-me{
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    top: 500px;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    letter-spacing: 0.35em;
+    left: 350px;
+}
+.abt-me .me{
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    text-align: left;
+    top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    letter-spacing: 0.45em;
+    left: 0px;
+}
+.garis{
+  position: absolute;
+  top: 850px;
+  right: 400px;
+  width: 580px;
+  height: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+.works .my-works{
+  position:absolute;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive; 
+  font-size: xx-large;
+  letter-spacing: 0.35em;
+  left: 430px;
+  top: -60px;
+}
+.works{
+  left: 140px;
+  position: absolute;
+  top: 900px;
+  display: flex;
+  width: 78%;
+  margin: 50px auto;
+  justify-content: space-evenly;
+    }
+.works-1,
+.works-2,
+.works-3{
+  width: 250px;
+  height: 300px;
+  background-color: #4CC3C3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 2px 2px 10px grey;
+}
+.works-1 div,
+.works-2 div,
+.works-3 div{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #2f3640;
+}
+.works-1 p:first-of-type,
+.works-2 p:first-of-type,
+.works-3 p:first-of-type{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+.works-1 p:nth-last-child(2),
+.works-2 p:nth-last-child(2),
+.works-3 p:nth-last-child(2){
+  font-size: 12px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.works-1 button,
+.works-2 button,
+.works-3 button{
+  width: 90px;
+  height: 28px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  font-size: 12px;
+  margin-top: 150px;
+  position: absolute;
+}
+.footer{
+  width: 100%;
+  height: 100px;
+  top: 1350px;
+  position: absolute;
+  background-color: #4CC3C3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dancing Script', cursive; 
+  font-size: large;
+}
+.footer p{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 13px;
+  line-height: 0px;
+}
+.list-icon{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.list-icon div{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+</style>
+<body>
+    <nav>
+        <p class="nama">D</p>
+        <P>Portofolio Skills Contacts</P>
+    </nav>
+    <div class="about">
+        <p class="im">I’m Dalilah Khairunnisa</p>
+        <p class="front">a Front-End Developer</p>
+
+        <button class="btn-see">See my portofolio</button>
+    </div>
+    <div class="background"></div>
+    <div class="abt-me">
+        <p>On this page you can find out <br> about me </p>
+        <p class="me"> Hallo, <br> nama saya Dalilah Khairunnisa biasa di panggil Dalilah, saya berasal dari depok. Passion saya dalam bidang developer adalah front-end dan saya bersekolah di SMK Taruna Bhakti. Di sekolah saya sudah belajar banyak tentang framework dan library, dan juga saya berharap saya dapat lebih memahami dan terampil dalam menjalankan materi-materi selanjutnya. Sekian perkenalan diri dari saya, Terimakasih. </p>
+    </div>
+    <div class="garis"></div>
+    <div class="works">
+      <p class="my-works">My Skills</p>
+
+      <div class="works-1">
+        <p>Web Design</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem aut, nihil voluptas enim nesciunt quisquam.</p>
+        <button>more</button>
+      </div>
+
+      <div class="works-2">
+        <p>Web Developer</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem aut, nihil voluptas enim nesciunt quisquam.</p>
+        <button>more</button>
+      </div>
+
+      <div class="works-3">
+        <p>Graphic Desaigner</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem aut, nihil voluptas enim nesciunt quisquam.</p>
+        <button>more</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Contact Me</p>
+
+      <div class="list-icon">
+          <div><i class="fab fa-twitter"></i></div>
+          <div><i class="fab fa-instagram"></i></div>
+          <div><i class="fas fa-phone-alt"></i></i></div>
+          <div><i class="fas fa-comments"></i></div>
+      </div>
+  </div>
+</body>
+</html>
